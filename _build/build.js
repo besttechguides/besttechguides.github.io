@@ -48,21 +48,35 @@ const html = `<!DOCTYPE html>
   <meta property="og:site_name" content="${esc(B)}">
   <meta property="og:title" content="${esc(title)}">
   <meta property="og:description" content="${esc(desc)}">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="${C.SITE_URL}img/og-image.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="${esc(C.HERO_ALT)}">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${esc(title)}">
   <meta name="twitter:description" content="${esc(desc)}">
+  <meta name="twitter:image" content="${C.SITE_URL}img/og-image.png">
+  <meta name="twitter:image:alt" content="${esc(C.HERO_ALT)}">
+  <meta name="theme-color" content="#084848">
   <link rel="stylesheet" href="styles.css">
   <link rel="sitemap" type="application/xml" title="Sitemap" href="${C.SITE_URL}sitemap.xml">
 ${ld.map(o => `  <script type="application/ld+json">\n${JSON.stringify(o, null, 2)}\n  </script>`).join("\n")}
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="site-header__inner">
-      <p class="site-header__eyebrow">${esc(B)} · UK</p>
-      <h1>Admin made simpler for UK small businesses and sole traders</h1>
-      <p>Plain-English tools for the jobs HMRC and employment law hand you: mileage claims, Making Tax Digital and new employer duties. Start free in your browser; buy a pack only if you need more.</p>
-      <p class="site-header__ctas"><a class="btn btn--light" href="#tools">See the tools</a></p>
+  <header class="site-header hero">
+    <div class="site-header__inner hero__inner">
+      <div class="hero__text">
+        <p class="site-header__eyebrow">${esc(B)} · UK</p>
+        <h1>Admin made simpler for UK small businesses and sole traders</h1>
+        <p class="hero__sub">Plain-English tools for the jobs HMRC and employment law hand you: mileage claims, Making Tax Digital and new employer duties. Start free in your browser; buy a pack only if you need more.</p>
+        <p class="site-header__ctas"><a class="btn btn--cta" href="#tools">See the tools</a></p>
+      </div>
+      <picture class="hero__art">
+        <source type="image/webp" srcset="img/hero-480.webp 480w, img/hero-720.webp 720w, img/hero-960.webp 960w" sizes="(min-width: 860px) 460px, (min-width: 560px) 70vw, 92vw">
+        <img src="img/hero-960.png" width="800" height="600" alt="${esc(C.HERO_ALT)}" fetchpriority="high" decoding="async">
+      </picture>
     </div>
   </header>
 
