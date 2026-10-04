@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /_build/
+
+Sitemap: https://besttechguides.github.io/sitemap.xml
+Sitemap: https://besttechguides.github.io/mileclaim-uk/sitemap.xml
+Sitemap: https://besttechguides.github.io/mtd-scopecheck/sitemap.xml

@@ -1,0 +1,38 @@
+/* Hub: same teal / ink palette and components as MileClaim UK and MTD ScopeCheck */
+:root{--ink:#0f1c1e;--muted:#4a5c5f;--border:#b8c5c7;--surface:#fff;--page:#eef4f4;--brand:#0d6e6e;--brand-dark:#084848;--brand-light:#d4eeec;--focus:#ffdd00;--amber-bg:#fff7bf;--radius:6px;--shadow:0 1px 3px rgba(15,28,30,.12);--max:64rem;--font:"Segoe UI",system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--font);font-size:1.0625rem;line-height:1.5;color:var(--ink);background:var(--page)}
+a{color:var(--brand)}a:hover{color:var(--brand-dark)}
+a:focus-visible{outline:3px solid var(--focus);outline-offset:0}
+.skip-link{position:absolute;left:-9999px;top:0;background:var(--ink);color:#fff;padding:.5rem 1rem;z-index:100}.skip-link:focus{left:0}
+.site-header{background:var(--brand-dark);color:#fff;padding:1.75rem 1.25rem 2rem}
+.site-header__inner,main,.site-footer__inner{max-width:var(--max);margin:0 auto}
+.site-header__eyebrow{margin:0 0 .35rem;font-size:.875rem;letter-spacing:.04em;text-transform:uppercase;opacity:.9}
+.site-header h1{margin:0 0 .6rem;font-size:clamp(1.6rem,4.5vw,2.4rem);font-weight:700;letter-spacing:-.02em;line-height:1.2;max-width:40rem}
+.site-header p{margin:0;max-width:42rem;opacity:.95}
+.site-header__ctas{margin-top:1rem!important}
+main{padding:1.5rem 1.25rem 2.5rem}
+main h2{font-size:1.35rem;margin:.5rem 0 .85rem}
+section+section{margin-top:1.75rem}
+.grid{display:grid;grid-template-columns:1fr;gap:1rem}
+@media (min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:980px){.grid{grid-template-columns:repeat(3,1fr)}}
+.card{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--border);border-top:4px solid var(--brand);border-radius:var(--radius);box-shadow:var(--shadow);padding:1rem 1.15rem 1.15rem}
+.card--soon{border-top-color:var(--border);background:#f8fbfb}
+.card__tag{margin:0 0 .2rem;font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.card h3{margin:0 0 .45rem;font-size:1.2rem}
+.card__benefit{margin:0 0 .65rem}
+.card__price{margin:0 0 .8rem;font-weight:700;color:var(--brand-dark)}
+.card__ctas{display:flex;flex-wrap:wrap;gap:.5rem;margin:auto 0 .6rem}
+.card__note{margin:0;font-size:.85rem;color:var(--muted)}
+.btn{display:inline-block;font:inherit;font-size:.95rem;font-weight:600;padding:.5rem .9rem;border-radius:var(--radius);border:2px solid transparent;text-decoration:none;text-align:center}
+.btn--primary{background:var(--brand);color:#fff;border-color:var(--brand)}.btn--primary:hover{background:var(--brand-dark);border-color:var(--brand-dark);color:#fff}
+.btn--secondary{background:#fff;color:var(--brand-dark);border-color:var(--border)}.btn--secondary:hover{border-color:var(--brand);color:var(--brand-dark)}
+.btn--light{background:#fff;color:var(--brand-dark);border-color:#fff}.btn--light:hover{background:var(--brand-light);color:var(--brand-dark)}
+.badge{display:inline-block;background:var(--brand-light);color:var(--brand-dark);font-weight:600;font-size:.9rem;padding:.3rem .7rem;border-radius:999px}
+.disclaimer{background:var(--amber-bg);border:2px solid #d4c35a;border-radius:var(--radius);padding:.85rem 1.1rem;margin-top:1.75rem;font-size:.95rem}
+.disclaimer p{margin:0}
+.site-footer{border-top:1px solid var(--border);background:#fff;padding:1.5rem 1.25rem 2rem;font-size:.95rem}
+.site-footer p{margin:0 0 .5rem}
+.muted{color:var(--muted)}
