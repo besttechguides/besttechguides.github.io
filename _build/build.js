@@ -21,7 +21,19 @@ const card = t => {
       </article>`;
 };
 
+const adCard = a => `
+      <aside class="card card--ad" id="${a.id}" aria-label="Advertisement">
+        <p class="card__tag">${esc(a.tag)}</p>
+        <h3>${esc(a.title)}</h3>
+        <p class="card__benefit">${esc(a.body)}</p>
+        <p class="card__ctas">
+          <a class="btn btn--secondary" href="${esc(a.href)}" target="_blank" rel="sponsored noopener">${esc(a.cta)}</a>
+          ${a.compare ? `<a class="btn btn--link" href="${esc(a.compare.href)}" target="_blank" rel="noopener noreferrer">${esc(a.compare.label)}</a>` : ""}
+        </p>
+        <p class="card__note">${esc(a.note)}</p>
+      </aside>`;
 const live = C.TOOLS.filter(t => t.schema);
+const withAds = t => card(t) + (C.ADS || []).filter(a => a.after === t.id).map(adCard).join("");
 const ld = [
   { "@context": "https://schema.org", "@type": "Organization", name: B, url: C.SITE_URL, email: C.EMAIL,
     address: { "@type": "PostalAddress", streetAddress: "11 Laneside Avenue, Toton", addressLocality: "Nottingham", postalCode: "NG9 6LW", addressCountry: "GB" } },
@@ -83,7 +95,7 @@ ${ld.map(o => `  <script type="application/ld+json">\n${JSON.stringify(o, null, 
   <main id="main">
     <section aria-labelledby="tools-heading" id="tools">
       <h2 id="tools-heading">Tools</h2>
-      <div class="grid">${live.map(card).join("")}
+      <div class="grid">${live.map(withAds).join("")}
       </div>
     </section>
 

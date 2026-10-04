@@ -13,7 +13,18 @@ module.exports = {
     "https://besttechguides.github.io/mtd-scopecheck/sitemap.xml"
   ],
   /* Pages on this host with no sitemap of their own (listed in sitemap-hub.xml) */
-  EXTRA_URLS: ["https://besttechguides.github.io/all-steps/"],
+  EXTRA_URLS: ["https://besttechguides.github.io/all-steps/", "https://besttechguides.github.io/billfold/"],
+  /* Disclosed affiliate ads, shown after the card with id "after". Not part of the JSON-LD ItemList. */
+  ADS: [
+    {
+      id: "ad-sage", after: "mtd", tag: "Advertisement",
+      title: "Need MTD-compatible software? Try Sage Accounting (Ad)",
+      body: "Sage Accounting is paid cloud accounting software from Sage. Check it meets your needs, and compare other options on GOV.UK.",
+      cta: "See Sage Accounting (Ad)", href: "https://sageuklimited.sjv.io/5kGrQj",
+      compare: { label: "Compare MTD software on GOV.UK", href: "https://www.gov.uk/guidance/choose-the-right-software-for-making-tax-digital-for-income-tax" },
+      note: "Ad: this is an affiliate link. We may earn a commission if you buy through it, at no extra cost to you."
+    }
+  ],
   TOOLS: [
     {
       id: "mileclaim", name: "MileClaim UK", tag: "Mileage · HMRC",
@@ -34,6 +45,14 @@ module.exports = {
       note: "Unofficial helper. Not tax advice. Some software links on its result page are disclosed affiliate links, marked (Ad).",
       buttons: [{ label: "Try free", href: "https://besttechguides.github.io/mtd-scopecheck/", primary: true }],
       schema: { type: "WebApplication", url: "https://besttechguides.github.io/mtd-scopecheck/", offers: [["Free scope checker", "0", "https://besttechguides.github.io/mtd-scopecheck/"]] }
+    },
+    {
+      id: "billfold", name: "Billfold", tag: "Invoices · Expenses",
+      benefit: "Make invoices with the details GOV.UK lists and log expenses under the Self Assessment headings by tax year, free and with no account.",
+      price: "Free",
+      note: "Runs in your browser. Not tax advice and not Making Tax Digital software.",
+      buttons: [{ label: "Try free", href: "https://besttechguides.github.io/billfold/", primary: true }],
+      schema: { type: "WebApplication", url: "https://besttechguides.github.io/billfold/", offers: [["Free invoice and expense worksheet", "0", "https://besttechguides.github.io/billfold/"]] }
     },
     {
       id: "allsteps", name: "All Steps", tag: "Employment Rights Act 2025",

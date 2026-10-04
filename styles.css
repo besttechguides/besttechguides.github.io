@@ -46,3 +46,6 @@ section+section{margin-top:1.75rem}
 .site-footer{border-top:1px solid var(--border);background:#fff;padding:1.5rem 1.25rem 2rem;font-size:.95rem}
 .site-footer p{margin:0 0 .5rem}
 .muted{color:var(--muted)}
+.card--ad{border-top-color:#d4c35a;border-style:dashed;border-top-style:solid;background:#fffdf3}
+.card--ad h3{font-size:1.1rem}
+.btn--link{background:none;border-color:transparent;color:var(--brand);text-decoration:underline;padding-left:.2rem;padding-right:.2rem}
