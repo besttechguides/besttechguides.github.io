@@ -49,3 +49,7 @@ section+section{margin-top:1.75rem}
 .card--ad{border-top-color:#d4c35a;border-style:dashed;border-top-style:solid;background:#fffdf3}
 .card--ad h3{font-size:1.1rem}
 .btn--link{background:none;border-color:transparent;color:var(--brand);text-decoration:underline;padding-left:.2rem;padding-right:.2rem}
+.card__banner{margin:0 0 .75rem;text-align:center}
+.card__banner a{display:inline-block;max-width:100%;border-radius:var(--radius);line-height:0}
+.card__banner img{display:block;max-width:100%;height:auto;aspect-ratio:300/250;border-radius:var(--radius)}
+.card__banner a:focus-visible{outline:3px solid var(--focus);outline-offset:2px}

@@ -25,6 +25,7 @@ const adCard = a => `
       <aside class="card card--ad" id="${a.id}" aria-label="Advertisement">
         <p class="card__tag">${esc(a.tag)}</p>
         <h3>${esc(a.title)}</h3>
+        ${a.image ? `<p class="card__banner"><a href="${esc(a.href)}" target="_blank" rel="sponsored noopener"><picture><source type="image/webp" srcset="${a.image.webp}"><img src="${a.image.png}" width="${a.image.width}" height="${a.image.height}" alt="${esc(a.image.alt)}" loading="lazy" decoding="async"></picture></a></p>` : ""}
         <p class="card__benefit">${esc(a.body)}</p>
         <p class="card__ctas">
           <a class="btn btn--secondary" href="${esc(a.href)}" target="_blank" rel="sponsored noopener">${esc(a.cta)}</a>

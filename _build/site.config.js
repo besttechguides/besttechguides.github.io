@@ -21,6 +21,7 @@ module.exports = {
       title: "Need MTD-compatible software? Try Sage Accounting (Ad)",
       body: "Sage Accounting is paid cloud accounting software from Sage. Check it meets your needs, and compare other options on GOV.UK.",
       cta: "See Sage Accounting (Ad)", href: "https://sageuklimited.sjv.io/5kGrQj",
+      image: { png: "img/sage-300x250.png", webp: "img/sage-300x250.webp", width: 300, height: 250, alt: "Sage Accounting offer: 100% off for 3 months (Ad)" },
       compare: { label: "Compare MTD software on GOV.UK", href: "https://www.gov.uk/guidance/choose-the-right-software-for-making-tax-digital-for-income-tax" },
       note: "Ad: this is an affiliate link. We may earn a commission if you buy through it, at no extra cost to you."
     }
