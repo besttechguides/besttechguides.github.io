@@ -3,7 +3,7 @@
 module.exports = {
   BRAND: "UK Admin Tools",
   SITE_URL: "https://besttechguides.github.io/",
-  TRADER_LINE: "Best Tech Guides is a trading name of Andrew Ellis, 11 Laneside Avenue, Toton, Nottingham NG9 6LW.",
+  TRADER_LINE: "Best Tech Guides is a trading name of Andrew Ellis.",
   EMAIL: "lemondogs@yahoo.co.uk",
   LASTMOD: "2026-10-04",
   HERO_ALT: "Illustration of a small-business desk: a laptop showing a chart and checklist, receipts and coins, a coffee mug, a calendar with a date circled, and a car badge with a dotted route to a map pin.",

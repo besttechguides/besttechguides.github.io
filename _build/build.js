@@ -36,8 +36,7 @@ const adCard = a => `
 const live = C.TOOLS.filter(t => t.schema);
 const withAds = t => card(t) + (C.ADS || []).filter(a => a.after === t.id).map(adCard).join("");
 const ld = [
-  { "@context": "https://schema.org", "@type": "Organization", name: B, url: C.SITE_URL, email: C.EMAIL,
-    address: { "@type": "PostalAddress", streetAddress: "11 Laneside Avenue, Toton", addressLocality: "Nottingham", postalCode: "NG9 6LW", addressCountry: "GB" } },
+  { "@context": "https://schema.org", "@type": "Organization", name: B, url: C.SITE_URL, email: C.EMAIL },
   { "@context": "https://schema.org", "@type": "ItemList", name: `${B} tools`, itemListElement: live.map((t, i) => ({
       "@type": "ListItem", position: i + 1,
       item: Object.assign({ "@type": t.schema.type, name: t.name, url: t.schema.url, description: t.benefit },
