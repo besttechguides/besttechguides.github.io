@@ -13,7 +13,7 @@ module.exports = {
     "https://besttechguides.github.io/mtd-scopecheck/sitemap.xml"
   ],
   /* Pages on this host with no sitemap of their own (listed in sitemap-hub.xml) */
-  EXTRA_URLS: ["https://besttechguides.github.io/all-steps/", "https://besttechguides.github.io/billfold/"],
+  EXTRA_URLS: ["https://besttechguides.github.io/all-steps/", "https://besttechguides.github.io/billfold/", "https://besttechguides.github.io/noticeduty/", "https://besttechguides.github.io/first-six/"],
   /* Disclosed affiliate ads, shown after the card with id "after". Not part of the JSON-LD ItemList. */
   ADS: [
     {
@@ -68,6 +68,33 @@ module.exports = {
       schema: { type: "WebApplication", url: "https://besttechguides.github.io/all-steps/", offers: [["Free demo", "0", "https://besttechguides.github.io/all-steps/"], ["All Steps Site Pack", "39.00", "https://payhip.com/b/bBaI7"], ["All Steps Multi-site Group", "99.00", "https://payhip.com/b/0mWQ7"]] }
     },
     {
+      id: "noticeduty", name: "NoticeDuty", tag: "DMCC Act 2024 · Subscriptions",
+      benefit: "Plan the reminder, cooling-off and end-of-contract notices for the new UK subscription contract rules, expected from January 2027: dates worked out for every subscriber, with draft notice wording.",
+      price: "Free demo · Starter £100 · Growth £190 · Scale £350 (one-off)",
+      note: "Expected from January 2027: the exact day and the regulations are not published yet. Not legal advice. Data stays on your device.",
+      buttons: [
+        { label: "Try free demo", href: "https://besttechguides.github.io/noticeduty/", primary: true },
+        { label: "Buy Starter £100", href: "https://payhip.com/b/SkH8e", external: true },
+        { label: "Buy Growth £190", href: "https://payhip.com/b/UNRVc", external: true },
+        { label: "Buy Scale £350", href: "https://payhip.com/b/RCeh4", external: true }
+      ],
+      schema: { type: "WebApplication", url: "https://besttechguides.github.io/noticeduty/", offers: [["Free demo", "0", "https://besttechguides.github.io/noticeduty/"], ["NoticeDuty Starter (up to 1,000 subscriptions)", "100.00", "https://payhip.com/b/SkH8e"], ["NoticeDuty Growth (up to 5,000 subscriptions)", "190.00", "https://payhip.com/b/UNRVc"], ["NoticeDuty Scale (up to 10,000 subscriptions)", "350.00", "https://payhip.com/b/RCeh4"]] }
+    },
+    {
+      id: "firstsix", name: "First Six", tag: "Employment Rights Act 2025",
+      benefit: "Keep probation on track before the six-month unfair dismissal qualifying period starts, from 1 January 2027: each person's qualifying date, review reminders, probation and appeal letters, and a notice and holiday pay calculator.",
+      price: "Free demo · Team £90 · Business £190 · Company £390 · Exit Pack £19 (one-off)",
+      note: "England, Wales and Scotland. Not legal advice. Data stays on your device.",
+      buttons: [
+        { label: "Try free demo", href: "https://besttechguides.github.io/first-six/", primary: true },
+        { label: "Buy Team (10 staff) £90", href: "https://payhip.com/b/8y16X", external: true },
+        { label: "Buy Business (30 staff) £190", href: "https://payhip.com/b/jNt4T", external: true },
+        { label: "Buy Company (150 staff) £390", href: "https://payhip.com/b/RCrod", external: true },
+        { label: "Buy Exit Pack £19", href: "https://payhip.com/b/x9wab", external: true }
+      ],
+      schema: { type: "WebApplication", url: "https://besttechguides.github.io/first-six/", offers: [["Free demo", "0", "https://besttechguides.github.io/first-six/"], ["First Six Team (up to 10 staff)", "90.00", "https://payhip.com/b/8y16X"], ["First Six Business (up to 30 staff)", "190.00", "https://payhip.com/b/jNt4T"], ["First Six Company (up to 150 staff)", "390.00", "https://payhip.com/b/RCrod"], ["First Six Exit Pack (one employee)", "19.00", "https://payhip.com/b/x9wab"]] }
+    },
+    {
       id: "signal", name: "SIGNAL", tag: "Content planning",
       benefit: "A 90-day content system for selling digital products: a PDF guide and spreadsheet content calendar. SIGNAL Complete bundles them with a prompt vault and matching PowerPoint posts.",
       price: "£27 · Complete £37",
@@ -77,16 +104,6 @@ module.exports = {
         { label: "Buy SIGNAL Complete £37", href: "https://payhip.com/b/3fCz1", external: true }
       ],
       schema: { type: "Product", url: "https://payhip.com/b/0lhdi", offers: [["SIGNAL 90-Day Authority Content System", "27.00", "https://payhip.com/b/0lhdi"], ["SIGNAL Complete", "37.00", "https://payhip.com/b/3fCz1"]] }
-    },
-    {
-      id: "noticeduty", name: "NoticeDuty", tag: "Coming soon · late 2026", soon: true,
-      benefit: "Work out when UK subscription businesses must send the new DMCC Act 2024 subscription notices, with dated reminders for every customer.",
-      price: "Coming soon", note: "UK employer and business compliance app. No purchase available yet.", buttons: []
-    },
-    {
-      id: "firstsix", name: "First Six", tag: "Coming soon · late 2026", soon: true,
-      benefit: "Keep probation reviews on track before the six-month unfair dismissal qualifying period starts on 1 January 2027, with each person's qualifying date and review reminders.",
-      price: "Coming soon", note: "UK employer compliance app. No purchase available yet.", buttons: []
     }
   ]
 };

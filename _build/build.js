@@ -99,12 +99,12 @@ ${ld.map(o => `  <script type="application/ld+json">\n${JSON.stringify(o, null, 
       </div>
     </section>
 
-    <section aria-labelledby="soon-heading" id="soon">
+${C.TOOLS.some(t => t.soon) ? `    <section aria-labelledby="soon-heading" id="soon">
       <h2 id="soon-heading">Coming soon</h2>
       <div class="grid">${C.TOOLS.filter(t => t.soon).map(card).join("")}
       </div>
     </section>
-
+` : ""}
     <aside class="disclaimer" role="note">
       <p>These are unofficial helpers, not tax or legal advice, and are not affiliated with HMRC or GOV.UK. Always check current rules on <a href="https://www.gov.uk/" target="_blank" rel="noopener noreferrer">GOV.UK</a>. Paid packs are sold and delivered through Payhip (MileClaim also on Etsy).</p>
     </aside>
