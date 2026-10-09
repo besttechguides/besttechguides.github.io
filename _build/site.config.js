@@ -57,7 +57,7 @@ module.exports = {
     },
     {
       id: "allsteps", name: "All Steps", tag: "Employment Rights Act 2025",
-      benefit: "Get your workplace ready for the 'all reasonable steps' sexual harassment duty and third-party harassment rule, expected from 30 October 2026: gap check, training log and print pack.",
+      benefit: "Get your workplace ready for the 'all reasonable steps' sexual harassment duty and third-party harassment rule, from 30 October 2026: gap check, training log and print pack.",
       price: "Free demo · Site Pack £39 · Multi-site Group £99",
       note: "England, Wales and Scotland. Not legal advice. Data stays on your device.",
       buttons: [
