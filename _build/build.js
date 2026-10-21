@@ -108,6 +108,11 @@ ${C.TOOLS.some(t => t.soon) ? `    <section aria-labelledby="soon-heading" id="s
     <aside class="disclaimer" role="note">
       <p>These are unofficial helpers, not tax or legal advice, and are not affiliated with HMRC or GOV.UK. Always check current rules on <a href="https://www.gov.uk/" target="_blank" rel="noopener noreferrer">GOV.UK</a>. Paid packs are sold and delivered through Payhip (MileClaim also on Etsy).</p>
     </aside>
+
+    <section class="about" id="about" aria-labelledby="about-h">
+      <h2 id="about-h">About</h2>
+      <p>${esc(B)} is run by Andrew Ellis, trading as Best Tech Guides, in Nottingham, UK. The tools are built to be simple, private (they run in your browser) and checked against GOV.UK guidance. Questions, corrections or support: <a href="mailto:${C.EMAIL}">${C.EMAIL}</a>.</p>
+    </section>
   </main>
 
   <footer class="site-footer">
