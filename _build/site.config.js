@@ -95,6 +95,18 @@ module.exports = {
       schema: { type: "WebApplication", url: "https://besttechguides.github.io/first-six/", offers: [["Free demo", "0", "https://besttechguides.github.io/first-six/"], ["First Six Team (up to 10 staff)", "90.00", "https://payhip.com/b/8y16X"], ["First Six Business (up to 30 staff)", "190.00", "https://payhip.com/b/jNt4T"], ["First Six Company (up to 150 staff)", "390.00", "https://payhip.com/b/RCrod"], ["First Six Exit Pack (one employee)", "19.00", "https://payhip.com/b/x9wab"]] }
     },
     {
+      id: "landlord", name: "Landlord Register Ready", tag: "Renters' Rights Act 2025 · PRS Database",
+      benefit: "A free one-property checker and paid workbooks to get ready for England's new landlord register (PRS Database): what to gather for each property, with fees and regional dates tracked.",
+      price: "Free Lite · Standard £11 · Pro £22 (one-off)",
+      note: "England only. Rules are still in draft. Not legal advice. Check GOV.UK.",
+      buttons: [
+        { label: "Get Lite free", href: "https://payhip.com/b/D3opT", primary: true, external: true },
+        { label: "Buy Standard £11", href: "https://payhip.com/b/Lt5YO", external: true },
+        { label: "Buy Pro £22", href: "https://payhip.com/b/WsGCM", external: true }
+      ],
+      schema: { type: "Product", url: "https://payhip.com/b/D3opT", offers: [["Landlord Register Ready Lite", "0", "https://payhip.com/b/D3opT"], ["Landlord Register Ready Standard", "11.00", "https://payhip.com/b/Lt5YO"], ["Landlord Register Ready Pro", "22.00", "https://payhip.com/b/WsGCM"]] }
+    },
+    {
       id: "signal", name: "SIGNAL", tag: "Content planning",
       benefit: "A 90-day content system for selling digital products: a PDF guide and spreadsheet content calendar. SIGNAL Complete bundles them with a prompt vault and matching PowerPoint posts.",
       price: "£27 · Complete £37",
